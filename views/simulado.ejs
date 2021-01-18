@@ -1,0 +1,104 @@
+<%- include("./defaults/head") %>
+<title>Simulado Geral CCNerd</title>
+</head>
+<body>
+    <div class="simulado">
+        <header>
+            <nav>
+                <a href="/"><img src="/img/logo.png" alt=""></a>
+<!-- 
+                <div class="slider">
+                    <input type="range" min="0" max="20" value="0" oninput="rangeValue.innerText = this.value">
+                    <p id="rangeValue">0</p>
+                  </div> -->
+            </nav>
+        </header>
+    </div>
+
+
+    <section class="questions">
+        <form action="/dashboard">
+            <div class="questao_container">
+                <h3>1 - De quem é a famosa frase “Penso, logo existo”?</h3>
+
+                <label for="input1">
+                    <input type="radio" name="questao1" id="input1">
+                    Platão
+                </label>
+
+                <label for="input2">
+                    <input type="radio" name="questao1" id="input2">
+                    Galileu Galilei
+                </label>
+
+                <label for="input3">
+                    <input type="radio" name="questao1" id="input3">
+                    Descartes
+                </label>
+
+                <label for="input4">
+                    <input type="radio" name="questao1" id="input4">
+                    Descartes
+                </label>
+            </div>
+
+
+
+            <div class="questao_container">
+                <h3>2 - Qual o nome do presidente do Brasil que ficou conhecido como Jango?</h3>
+
+                <label for="questao2_1">
+                    <input type="radio" name="questao2" id="questao2_1">
+                    Jânio Quadros
+                </label>
+
+                <label for="questao2_2">
+                    <input type="radio" name="questao2" id="questao2_2">
+                    Jacinto Anjos
+                </label>
+
+                <label for="questao2_3">
+                    <input type="radio" name="questao2" id="questao2_3">
+                    Getúlio Vargas
+                </label>
+
+                <label for="questao2_4">
+                    <input type="radio" name="questao2" id="questao2_4">
+                    João Goulart
+                </label>
+            </div>
+
+
+            <div class="questao_container">
+                <h3>3 - Qual o grupo em que todas as palavras foram escritas corretamente?</h3>
+
+                <label for="questao3_1">
+                    <input type="radio" name="questao3" id="questao3_1">
+                    Asterístico, beneficiente, meteorologia, entertido
+                </label>
+
+                <label for="questao3_2">
+                    <input type="radio" name="questao3" id="questao3_2">
+                    Asterisco, beneficente, meteorologia, entretido
+                </label>
+
+                <label for="questao3_3">
+                    <input type="radio" name="questao3" id="questao3_3">
+                    Asterisco, beneficente, metereologia, entretido
+                </label>
+
+                <label for="questao3_4">
+                    <input type="radio" name="questao3" id="questao3_4">
+                    Asterístico, beneficiente, metereologia, entretido
+                </label>
+            </div>
+
+            <button type="submit" class="btn_full_orange">Enviar</button>
+        </form>
+
+        <div class="timer"><p></p></div>
+    </section>
+
+    <script src="/js/timer.js"></script>
+</body>
+</html>

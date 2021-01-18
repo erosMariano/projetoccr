@@ -1,0 +1,124 @@
+<%- include("./defaults/head") %>
+<title>Cadatro CCNerd</title>
+</head>
+<body>
+    <div class="container cadastro">
+            <a href="/"><img src="/img/arrow-left.svg" class="arrow" alt="" srcset=""></a>
+        <h1>Cadastro</h1>
+
+        <form action="/simulado_question" method="post">
+            
+            <div>
+                <label for="nome">
+                    <div>Nome</div>
+                    <input type="text" name="nome" id="nome">
+                </label>
+
+                <label for="apelido">
+                    <div>Apelido</div>
+                    <input type="text" name="apelido" id="apelido">
+                </label>
+
+
+                <label for="profissao">
+                    <div>Prossisão desejada</div>
+                    <input type="text" name="profissao" id="profissao">
+                </label>
+
+                <label for="date">
+                    <div>Data de nascimento</div>
+                    <input type="date" name="birth_date" id="date">
+                </label>
+            </div>
+
+            <div>
+                <label for="email">
+                    <div>Email</div>
+                    <input type="text" name="email" id="email">
+                </label>
+
+                <label for="password">
+                    <div>Senha</div>
+                    <input type="password" name="password" id="password">
+                </label>
+
+                
+                <label for="cidade">
+                    <div>Cidade</div>
+                    <input type="password" name="cidade" id="cidade">
+                </label>
+            </div>
+
+
+
+            <div>
+                <label for="estado">
+                    <div>Estado</div>
+                    <select name="estado"> 
+                        <option value="estado">Selecione o Estado</option> 
+                        <option value="ac">Acre</option> 
+                        <option value="al">Alagoas</option> 
+                        <option value="am">Amazonas</option> 
+                        <option value="ap">Amapá</option> 
+                        <option value="ba">Bahia</option> 
+                        <option value="ce">Ceará</option> 
+                        <option value="df">Distrito Federal</option> 
+                        <option value="es">Espírito Santo</option> 
+                        <option value="go">Goiás</option> 
+                        <option value="ma">Maranhão</option> 
+                        <option value="mt">Mato Grosso</option> 
+                        <option value="ms">Mato Grosso do Sul</option> 
+                        <option value="mg">Minas Gerais</option> 
+                        <option value="pa">Pará</option> 
+                        <option value="pb">Paraíba</option> 
+                        <option value="pr">Paraná</option> 
+                        <option value="pe">Pernambuco</option> 
+                        <option value="pi">Piauí</option> 
+                        <option value="rj">Rio de Janeiro</option> 
+                        <option value="rn">Rio Grande do Norte</option> 
+                        <option value="ro">Rondônia</option> 
+                        <option value="rs">Rio Grande do Sul</option> 
+                        <option value="rr">Roraima</option> 
+                        <option value="sc">Santa Catarina</option> 
+                        <option value="se">Sergipe</option> 
+                        <option value="sp">São Paulo</option> 
+                        <option value="to">Tocantins</option> 
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="description">
+                    <div>Sua descrição</div>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </label>
+            </div>
+
+            <div class="our">
+                <span></span>
+                OU
+                <span></span>
+            </div>
+
+            <div class="login_social">
+                <button><a href="#" class="face"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></button>
+                <button><a href="#" class="apple"><i class="fa fa-apple" aria-hidden="true"></i>Apple</a></button>
+                <button><a href="#" class="google"><i class="fa fa-google" aria-hidden="true"></i>Google</a></button>
+            </div>
+
+
+            <div class="receberNot">
+                <label for="deseja">
+                    <input type="checkbox" name="deseja_receber" id="deseja">
+                    <div>Deseja receber notifações?</div>
+                </label>
+            </div>
+
+            <div class="enviar_form">
+                <button class="btn_full_orange" type="submit">Cadastrar</button>
+            </div>
+        </form>
+
+        <img class="img_pc" src="/img/tela_pc.png" alt="" srcset="">
+    </div>
+</body>
+</html>

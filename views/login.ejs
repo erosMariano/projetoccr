@@ -1,0 +1,47 @@
+<%- include("./defaults/head") %>
+<title>Login CCNerd</title>
+</head>
+<body>
+    <a href="/"><img src="/img/arrow-left.svg" class="arrow" alt="" srcset=""></a>
+
+
+    <div class="container_login">
+        <h1>Login</h1>
+
+        <div class="login">
+            <img src="/img/logo.png" alt="">
+
+            <form action="/login" method="POST">
+                <div>
+                    <label for="email">
+                        <input type="text" name="email" id="email" placeholder="usario@email.com">
+                    </label>
+    
+                    <label for="password">
+                        <div>Senha</div>
+                        <input type="password" name="password" id="password" placeholder="********">
+                    </label>
+
+                </div>
+                
+                <div class="our">
+                    <span></span>
+                    OU
+                    <span></span>
+                </div>
+    
+                <div class="login_social">
+                    <button><a href="#" class="face"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></button>
+                    <button><a href="#" class="apple"><i class="fa fa-apple" aria-hidden="true"></i>Apple</a></button>
+                    <button><a href="#" class="google"><i class="fa fa-google" aria-hidden="true"></i>Google</a></button>
+                </div>
+
+
+                <div class="enviar_form">
+                    <button class="btn_full_orange" type="submit">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
